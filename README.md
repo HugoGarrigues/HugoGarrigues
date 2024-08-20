@@ -10,7 +10,6 @@
 - 🔭 I’m currently studying at Aix Ynov Campus
 - 🌱 I’m based in Aix-En-Provence, FR 
 - 📝 My Portfolio will be released soon
-- 🏆 I'm striving to increase my [GitHub stats rating](#🏆-my-stats) by contributing to [open source](https://opensource.com/resources/what-open-source).
 - ⚡ About me: I love Cars, addicted to Gym, ... !
 
 <div align="center">
