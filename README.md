@@ -10,7 +10,7 @@
 - 🔭 I’m currently studying at Aix Ynov Campus
 - 🌱 I’m based in Aix-En-Provence, FR 
 - 📝 My Portfolio will be released soon
-- ⚡ About me: I love Cars, addicted to Gym, ... !
+- ⚡ About me: I love Cars, addicted to Gym !
 
 <div align="center">
 
