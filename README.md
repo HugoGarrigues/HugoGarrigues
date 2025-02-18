@@ -9,14 +9,10 @@
 
 - 🔭 I’m currently studying at Aix Ynov Campus
 - 🌱 I’m based in Aix-En-Provence, FR 
-- 📝 My Portfolio will be released soon
+- 📝 Work at Laroq as Web Developper
 - ⚡ About me: I love Cars, addicted to Gym !
 
 <div align="center">
-
-## 💡 A Quote:
-
-[![readme Quotes](https://quotes-github-readme.vercel.app/api?quote=yes&type=horizontal)](https://github.com/piyushsuthar/github-readme-quotes)
 
 ## 💻 My Tech Stack:
     
