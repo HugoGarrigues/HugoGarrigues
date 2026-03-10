@@ -1,14 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160">
-  <rect width="800" height="160" fill="#141414" rx="10"/>
-  <text
-    x="400" y="95"
-    font-family="'Helvetica Neue', Helvetica, sans-serif"
-    font-size="48"
-    font-weight="600"
-    letter-spacing="20"
-    text-anchor="middle"
-    fill="#ffffff"
-    opacity="0.92">
-    HGRS
-  </text>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="4" dy="4"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="e1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="e1" result="shape"/>
+    </filter>
+
+    <radialGradient id="g0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(325 680) rotate(15) scale(691 559)">
+      <stop stop-color="#00FFE0" stop-opacity="0.43"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1389 355) rotate(141) scale(936 834)">
+      <stop stop-color="#FF006B" stop-opacity="0.43"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(626 816) rotate(-2) scale(943 733)">
+      <stop stop-color="#FF00E6" stop-opacity="0.46"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(-232 427) rotate(47) scale(1118 1176)">
+      <stop stop-color="#7F00FF" stop-opacity="0.46"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(600 315) rotate(90) scale(491 910)">
+      <stop stop-color="white" stop-opacity="0.18"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="card-clip">
+      <rect x="25" y="25" width="1150" height="580" rx="24"/>
+    </clipPath>
+
+    <!-- Blur for glow effect on text -->
+    <filter id="text-glow" x="-5%" y="-30%" width="110%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="25" width="1150" height="580" rx="24" fill="black"/>
+    <g opacity="0.75">
+      <rect x="25" y="25" width="1150" height="580" rx="24" fill="url(#g0)"/>
+      <rect x="25" y="25" width="1150" height="580" rx="24" fill="url(#g1)"/>
+      <rect x="25" y="25" width="1150" height="580" rx="24" fill="url(#g2)"/>
+      <rect x="25" y="25" width="1150" height="580" rx="24" fill="url(#g3)"/>
+    </g>
+    <!-- Center light -->
+    <g clip-path="url(#card-clip)">
+      <rect x="-156" y="-176" width="1512" height="982" fill="url(#g4)"/>
+    </g>
+  </g>
+
+  <!-- HGRS — scale in from center -->
+  <g filter="url(#text-glow)">
+    <text
+      x="600" y="355"
+      font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+      font-size="200"
+      font-weight="800"
+      letter-spacing="32"
+      text-anchor="middle"
+      fill="white"
+      transform-origin="600 315">
+      HGRS
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="0.7;1"
+        dur="0.8s" begin="0s" fill="freeze"
+        calcMode="spline"
+        keySplines="0.16 1 0.3 1"
+        keyTimes="0;1"
+        additive="sum"/>
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0s" fill="freeze"
+        calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+    </text>
+  </g>
+
+
 </svg>
