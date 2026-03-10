@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160">
+  <rect width="800" height="160" fill="#141414" rx="10"/>
+  <text
+    x="400" y="95"
+    font-family="'Helvetica Neue', Helvetica, sans-serif"
+    font-size="48"
+    font-weight="600"
+    letter-spacing="20"
+    text-anchor="middle"
+    fill="#ffffff"
+    opacity="0.92">
+    HGRS
+  </text>
+</svg>
