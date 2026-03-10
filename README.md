@@ -1,1 +1,1 @@
-![banner](./hgrs.svg)
+![banner](./banner.svg)
