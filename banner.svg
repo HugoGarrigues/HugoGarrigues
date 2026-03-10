@@ -80,11 +80,17 @@
       filter="url(#glow)"
       opacity="0">
       HGRS
-      <animate attributeName="opacity" values="0;1" dur="1s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1"/>
-      <animateTransform attributeName="transform" type="scale" from="0.92 0.92" to="1 1"
-        begin="0s" dur="2.5s" fill="freeze"
-        calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1"
-        transform-origin="600 315"/>
+      <animate attributeName="opacity" values="0;0;1" dur="1.4s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.16 1 0.3 1" keyTimes="0;0.25;1"/>
+      <animateTransform attributeName="transform" type="translate"
+        values="600,355; 600,355; 600,355"
+        begin="0s" dur="1.6s" fill="freeze" keyTimes="0;0.2;1"/>
+      <animateTransform attributeName="transform" type="scale" additive="sum"
+        values="0.72; 0.72; 1"
+        begin="0s" dur="1.6s" fill="freeze"
+        calcMode="spline" keySplines="0.42 0 0.58 1;0.16 1 0.3 1" keyTimes="0;0.2;1"/>
+      <animateTransform attributeName="transform" type="translate" additive="sum"
+        values="-600,-355; -600,-355; -600,-355"
+        begin="0s" dur="1.6s" fill="freeze" keyTimes="0;0.2;1"/>
     </text>
   </g>
 </svg>
